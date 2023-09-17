@@ -4,6 +4,8 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {"*": ["./src/*"]},
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
