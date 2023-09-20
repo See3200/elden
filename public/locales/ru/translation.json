@@ -1,5 +1,7 @@
 {
   "translate": "Перевести",
   "language": "Язык",
-  "toggleSidebar": "Переключить панель"
+  "toggleSidebar": "Переключить панель",
+  "aboutLink": "О нас",
+  "mainLink": "Главная страница"
 }

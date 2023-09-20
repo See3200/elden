@@ -1,5 +1,7 @@
 {
   "translate": "Translate",
   "language": "Language",
-  "toggleSidebar": "Toggle Sidebar"
+  "toggleSidebar": "Toggle Sidebar",
+  "aboutLink": "About us",
+  "mainLink": "Main page"
 }
