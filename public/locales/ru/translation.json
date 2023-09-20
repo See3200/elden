@@ -3,5 +3,9 @@
   "language": "Язык",
   "toggleSidebar": "Переключить панель",
   "aboutLink": "О нас",
-  "mainLink": "Главная страница"
+  "mainLink": "Главная страница",
+  "notFoundPage": "Страница не найдена",
+  "pageErrorMessage": "Что-то пошло не так",
+  "pageRefresh": "Обновить страницу",
+  "throwError": "Выбросить ошибку"
 }

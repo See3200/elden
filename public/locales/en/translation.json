@@ -3,5 +3,9 @@
   "language": "Language",
   "toggleSidebar": "Toggle Sidebar",
   "aboutLink": "About us",
-  "mainLink": "Main page"
+  "mainLink": "Main page",
+  "notFoundPage": "Page not found",
+  "pageErrorMessage": "Something went wrong",
+  "pageRefresh": "Refresh the page",
+  "throwError": "Throw Error"
 }
