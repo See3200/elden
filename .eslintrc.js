@@ -23,6 +23,13 @@ module.exports = {
         project: ["./tsconfig.json"], // Specify it only for TypeScript files
       },
     },
+    {
+      //this block-score is not required (no translations in tests)
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      }
+    }
   ],
   rules: {
     "quotes": [2, "double", { "avoidEscape": true }],
@@ -33,7 +40,16 @@ module.exports = {
     //"@typescript-eslint/no-explicit-any": "off",
     "no-unused-vars": "warn",
     "no-floating-promises": "off",
-    "i18next/no-literal-string": ["error", { markupOnly: true }],
-    "max-len": ["error", { code: 100, ignoreComments: true }]
+    "i18next/no-literal-string": ["error", 
+      { 
+        markupOnly: true,
+        ignoreAttribute: ["data-testid"]
+      }],
+    "max-len": ["error", { code: 100, ignoreComments: true }],
+    "@typescript-eslint/no-misused-promises": [2, {
+      "checksVoidReturn": {
+        "attributes": false
+      }
+    }]
   }
 }
