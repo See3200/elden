@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button, ThemeButton } from "./Button";
+import { Button, ButtonSize, ButtonTheme } from "./Button";
 import "app/styles/index.scss";
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/ThemeProvider";
@@ -14,7 +14,7 @@ const meta = {
 /*   argTypes: {
     backgroundColor: { control: "color" },
     className: "",
-    theme: ThemeButton.CLEAR
+    theme: ButtonTheme.CLEAR
   }, */
 } satisfies Meta<typeof Button>;
 
@@ -30,7 +30,7 @@ export const Primary: Story = {
 
 export const Clear: Story = {
   args: {
-    theme: ThemeButton.CLEAR,
+    theme: ButtonTheme.CLEAR,
     className: "",
     children: "Clear",
   },
@@ -38,17 +38,80 @@ export const Clear: Story = {
 
 export const Outlined: Story = {
   args: {
-    theme: ThemeButton.OUTLINE,
+    theme: ButtonTheme.OUTLINE,
     className: "",
     children: "Outlined",
   },
 };
 
+export const OutlinedSizeL: Story = {
+  args: {
+    theme: ButtonTheme.OUTLINE,
+    className: "",
+    children: "Outlined",
+    size: ButtonSize.L,
+  },
+};
+
+export const OutlinedSizeXL: Story = {
+  args: {
+    theme: ButtonTheme.OUTLINE,
+    className: "",
+    children: "Outlined",
+    size: ButtonSize.XL,
+  },
+};
+
 export const OutlinedDark: Story = {
   args: {
-    theme: ThemeButton.OUTLINE,
+    theme: ButtonTheme.OUTLINE,
     className: "",
     children: "Outlined",
   },
 };
 OutlinedDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const BackgroundTheme: Story = {
+  args: {
+    theme: ButtonTheme.BACKGROUND,
+    className: "",
+    children: "Background",
+  },
+};
+
+export const BackgroundInvertedTheme: Story = {
+  args: {
+    theme: ButtonTheme.BACKGROUND_INVERTED,
+    className: "",
+    children: "Background",
+  },
+};
+
+export const Square: Story = {
+  args: {
+    theme: ButtonTheme.BACKGROUND_INVERTED,
+    className: "",
+    children: ">",
+    square: true,
+  },
+};
+
+export const SquareSizeL: Story = {
+  args: {
+    theme: ButtonTheme.BACKGROUND_INVERTED,
+    className: "",
+    children: ">",
+    square: true,
+    size: ButtonSize.L,
+  },
+};
+
+export const SquareSizeXL: Story = {
+  args: {
+    theme: ButtonTheme.BACKGROUND_INVERTED,
+    className: "",
+    children: ">",
+    square: true,
+    size: ButtonSize.XL,
+  },
+};
