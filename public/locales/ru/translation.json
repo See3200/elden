@@ -7,5 +7,7 @@
   "notFoundPage": "Страница не найдена",
   "pageErrorMessage": "Что-то пошло не так",
   "pageRefresh": "Обновить страницу",
-  "throwError": "Выбросить ошибку"
+  "throwError": "Выбросить ошибку",
+  "login": "Войти",
+  "anyText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam."
 }

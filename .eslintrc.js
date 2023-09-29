@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
   },
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "i18next"],
+  plugins: ["@typescript-eslint", "i18next", "react-hooks"],
   overrides: [
     {
       files: ["*.ts", "*.tsx"], // Your TypeScript files extension
@@ -25,9 +25,10 @@ module.exports = {
     },
     {
       //this block-score is not required (no translations in tests)
-      files: ["**/src/**/*.test.{ts,tsx}"],
+      files: ["**/src/**/*.{test,stories}.{ts,tsx}"],
       rules: {
         "i18next/no-literal-string": "off",
+        "max-len": "off",
       }
     }
   ],
@@ -46,6 +47,10 @@ module.exports = {
         ignoreAttribute: ["data-testid", "to"]
       }],
     "max-len": ["error", { code: 100, ignoreComments: true }],
+    "jsx-a11y/no-static-element-interactions": "off", // not required
+    "jsx-a11y/click-events-have-key-events": "off", // not required
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
     "@typescript-eslint/no-misused-promises": [2, {
       "checksVoidReturn": {
         "attributes": false
