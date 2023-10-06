@@ -39,6 +39,7 @@ module.exports = {
     "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
     "max-lines-per-function": ["error", 200],
     "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
     "no-unused-vars": "warn",
     "no-floating-promises": "off",
     "i18next/no-literal-string": ["error", 

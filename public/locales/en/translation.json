@@ -11,5 +11,7 @@
   "login": "Login",
   "anyText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.",
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "enterName": "Enter user name",
+  "enterPass": "Enter password"
 }
