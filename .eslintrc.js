@@ -40,6 +40,8 @@ module.exports = {
     "max-lines-per-function": ["error", 200],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
     "no-unused-vars": "warn",
     "no-floating-promises": "off",
     "i18next/no-literal-string": ["error", 
@@ -57,7 +59,5 @@ module.exports = {
         "attributes": false
       }
     }],
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-call": "off",
   }
 }

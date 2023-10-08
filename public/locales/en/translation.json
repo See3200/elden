@@ -9,9 +9,12 @@
   "pageRefresh": "Refresh the page",
   "throwError": "Throw Error",
   "login": "Login",
+  "logout": "Logout",
   "anyText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.",
   "increment": "Increment",
   "decrement": "Decrement",
   "enterName": "Enter user name",
-  "enterPass": "Enter password"
+  "enterPass": "Enter password",
+  "authForm": "Authorization form",
+  "errorLogin": "You entered wrong login or password"
 }

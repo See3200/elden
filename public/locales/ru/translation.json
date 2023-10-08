@@ -9,9 +9,12 @@
   "pageRefresh": "Обновить страницу",
   "throwError": "Выбросить ошибку",
   "login": "Войти",
+  "logout": "Выйти",
   "anyText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.",
   "increment": "Увеличить",
   "decrement": "Уменьшить",
   "enterName": "Введите имя пользователя",
-  "enterPass": "Введите пароль"
+  "enterPass": "Введите пароль",
+  "authForm": "Форма авторизации",
+  "errorLogin": "Вы ввели неверный логин или пароль"
 }

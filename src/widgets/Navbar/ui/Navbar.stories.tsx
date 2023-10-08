@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import "app/styles/index.scss";
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/ThemeProvider";
+import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
 
 const meta = {
   title: "widgets/Navbar",
@@ -21,10 +22,18 @@ export const Light: Story = {
     className: "",
   },
 };
+Light.decorators = [StoreDecorator({})]
 
 export const Dark: Story = {
   args: {
     className: "",
   },
 };
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
+
+export const AuthNavbar: Story = {
+  args: {
+    className: "",
+  },
+};
+AuthNavbar.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({ user: {authData: {}} })];
