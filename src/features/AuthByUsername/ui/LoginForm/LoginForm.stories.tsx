@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { LoginForm } from "./LoginForm";
+import LoginForm from "./LoginForm";
 import "app/styles/index.scss";
 import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
 
@@ -26,7 +26,7 @@ export const withError: Story = {
   args: {},
 };
 withError.decorators = [StoreDecorator({
-  loginForm: { username: "123", password: "asd" },
+  loginForm: { username: "123", password: "asd", error: "ERROR" },
 })];
 
 export const Loading: Story = {

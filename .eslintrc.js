@@ -42,6 +42,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "no-unused-vars": "warn",
     "no-floating-promises": "off",
     "i18next/no-literal-string": ["error", 
