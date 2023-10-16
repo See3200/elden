@@ -6,6 +6,10 @@ module.exports = {
   },
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "i18next", "react-hooks"],
+  globals: {
+    __IS_DEV: true,
+    __API: true
+  },
   overrides: [
     {
       files: ["*.ts", "*.tsx"], // Your TypeScript files extension
