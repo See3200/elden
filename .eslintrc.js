@@ -19,7 +19,7 @@ module.exports = {
       // If you don't want to extend any rules, you don't need an `extends` attribute.
       extends: [
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        //"plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:i18next/recommended"
       ],
 
@@ -46,6 +46,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "no-unused-vars": "warn",
     "no-floating-promises": "off",

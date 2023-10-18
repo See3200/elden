@@ -17,5 +17,7 @@
   "enterName": "Enter user name",
   "enterPass": "Enter password",
   "authForm": "Authorization form",
-  "errorLogin": "You entered wrong login or password"
+  "errorLogin": "You entered wrong login or password",
+  "enterCountry": "Select country",
+  "enterCurrency": "Select currency"
 }

@@ -2,5 +2,13 @@
   "profilePage": "Profile",
   "edit": "Edit",
   "yourName": "Your name",
-  "yourSurname": "Your surname"
+  "yourSurname": "Your surname",
+  "yourAge": "Your age",
+  "errorProfileLoad": "Error occurs",
+  "tryRefresh": "Try to refresh the page",
+  "city": "City",
+  "enterUsername": "Enter the user name",
+  "enterAvatar": "Enter the link to an avatar",
+  "cancel": "Cancel",
+  "save": "Save"
 }
