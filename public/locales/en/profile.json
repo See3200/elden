@@ -10,5 +10,10 @@
   "enterUsername": "Enter the user name",
   "enterAvatar": "Enter the link to an avatar",
   "cancel": "Cancel",
-  "save": "Save"
+  "save": "Save",
+  "serverError": "Server error when saving",
+  "incorrectRegion": "Incorrect region",
+  "missingData": "Missing data",
+  "requiredNames": "Name and surname are required",
+  "incorrectAge": "Incorrect age"
 }

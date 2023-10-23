@@ -7,8 +7,9 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "i18next", "react-hooks"],
   globals: {
-    __IS_DEV: true,
-    __API: true
+    __IS_DEV__: true,
+    __API__: true,
+    __PROJECT__: true,
   },
   overrides: [
     {
