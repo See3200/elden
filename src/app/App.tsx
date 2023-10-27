@@ -17,10 +17,9 @@ const App = () => {
     dispatch(userActions.initAuthData())
   }, [dispatch]);
 
-  console.log(theme);
 
   return (
-    <div className={classNames("app", {}, [])}>
+    <div className={classNames("app", {}, [theme])}>
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">

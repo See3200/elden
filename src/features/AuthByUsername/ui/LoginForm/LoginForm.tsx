@@ -62,14 +62,14 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
           autofocus
           type="text"
           className={cls.input}
-          placeholder={t("enterPass")}
+          placeholder={t("enterName")}
           onChange={onChangeUsername}
           value={username}
         />
         <Input
           type="text"
           className={cls.input}
-          placeholder={t("enterName")}
+          placeholder={t("enterPass")}
           onChange={onChangePassword}
           value={password}
         />
