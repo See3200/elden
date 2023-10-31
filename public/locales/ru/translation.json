@@ -19,5 +19,6 @@
   "authForm": "Форма авторизации",
   "errorLogin": "Вы ввели неверный логин или пароль",
   "enterCountry": "Укажите страну",
-  "enterCurrency": "Укажите валюту"
+  "enterCurrency": "Укажите валюту",
+  "articleLink": "Статьи"
 }

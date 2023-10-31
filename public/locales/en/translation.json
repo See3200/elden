@@ -19,5 +19,6 @@
   "authForm": "Authorization form",
   "errorLogin": "You entered wrong login or password",
   "enterCountry": "Select country",
-  "enterCurrency": "Select currency"
+  "enterCurrency": "Select currency",
+  "articleLink": "Articles"
 }
