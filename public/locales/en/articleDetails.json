@@ -1,4 +1,7 @@
 {
   "articleDetailsPage": "Article details",
-  "loadError": "There was an error loading the article."
+  "loadError": "There was an error loading the article.",
+  "notFoundPage": "Not found page",
+  "comments": "Comments",
+  "noComments": "There are no comments"
 }
