@@ -20,5 +20,7 @@
   "errorLogin": "You entered wrong login or password",
   "enterCountry": "Select country",
   "enterCurrency": "Select currency",
-  "articleLink": "Articles"
+  "articleLink": "Articles",
+  "enterComment": "Enter a comment",
+  "send": "Send"
 }

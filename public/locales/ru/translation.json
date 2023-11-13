@@ -20,5 +20,7 @@
   "errorLogin": "Вы ввели неверный логин или пароль",
   "enterCountry": "Укажите страну",
   "enterCurrency": "Укажите валюту",
-  "articleLink": "Статьи"
+  "articleLink": "Статьи",
+  "enterComment": "Введите текст комментария",
+  "send": "Отправить"
 }

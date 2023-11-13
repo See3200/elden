@@ -1,17 +1,36 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
 import { CommentCard } from "./CommentCard";
+import type { Meta, StoryObj } from "@storybook/react";
+import "app/styles/index.scss";
 
-export default {
-  title: "shared/CommentCard",
+const meta = {
+  title: "entities/Comment/CommentCard",
   component: CommentCard,
-  argTypes: {
-    backgroundColor: { control: "color" },
+  parameters: {
+    layout: "centered",
   },
-} as ComponentMeta<typeof CommentCard>;
+  tags: ["autodocs"],
+} satisfies Meta<typeof CommentCard>;
 
-const Template: ComponentStory<typeof CommentCard> = (args) => <CommentCard {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const Normal: Story = {
+  args: {
+    comment: {
+      id: "1",
+      text: "hello world",
+      user: { id: "1", username: "Vasya" },
+    },
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    comment: {
+      id: "1",
+      text: "hello world",
+      user: { id: "1", username: "Vasya" },
+    },
+    isLoading: true,
+  }
+}
