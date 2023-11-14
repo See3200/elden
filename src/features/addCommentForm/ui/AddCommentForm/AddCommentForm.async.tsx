@@ -1,3 +1,3 @@
 import { lazy } from "react";
 
-export const ArticleDetailsPageAsync = lazy(() => import("./AddCommentForm"));
+export const AddCommentFormAsync = lazy(() => import("./AddCommentForm"));
