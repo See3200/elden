@@ -1,30 +1,25 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Loader } from "./Loader";
-import "app/styles/index.scss";
-import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
+import { Loader } from './Loader';
 
-const meta = {
-  title: "shared/Loader",
-  component: Loader,
-  parameters: {
-    layout: "centered",
-  },
-  tags: ["autodocs"],
-} satisfies Meta<typeof Loader>;
+export default {
+    title: 'shared/Loader',
+    component: Loader,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+    args: {
+        to: '/',
+    },
+} as ComponentMeta<typeof Loader>;
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+const Template: ComponentStory<typeof Loader> = (args) => <Loader {...args} />;
 
-export const Light: Story = {
-  args: {
-    className: "",
-  },
-};
+export const Normal = Template.bind({});
+Normal.args = {};
 
-export const Dark: Story = {
-  args: {
-    className: "",
-  },
-};
+export const Dark = Template.bind({});
+Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

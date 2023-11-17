@@ -1,11 +1,8 @@
-import { BrowserRouter } from "react-router-dom";
+import { Story } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-/* eslint-disable  @typescript-eslint/no-unsafe-call */
-export const RouterDecorator = (Story: any) => {
-  return (
+export const RouterDecorator = (story: () => Story) => (
     <BrowserRouter>
-      {Story()}
+        {story()}
     </BrowserRouter>
-  )
-};
+);

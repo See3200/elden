@@ -1,37 +1,33 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import LoginForm from "./LoginForm";
-import "app/styles/index.scss";
-import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
+import { PreloadedState } from '@reduxjs/toolkit';
+import LoginForm from './LoginForm';
 
-const meta = {
-  title: "features/LoginForm",
-  component: LoginForm,
-  parameters: {
-    layout: "centered",
-  },
-  tags: ["autodocs"],
-} satisfies Meta<typeof LoginForm>;
+export default {
+    title: 'features/LoginForm',
+    component: LoginForm,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof LoginForm>;
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+const Template: ComponentStory<typeof LoginForm> = (args) => <LoginForm {...args} />;
 
-export const Primary: Story = {
-  args: {},
-};
+export const Primary = Template.bind({});
+Primary.args = {};
 Primary.decorators = [StoreDecorator({
-  loginForm: { username: "123", password: "asd" },
+    loginForm: { username: '123', password: 'asd' },
 })];
 
-export const withError: Story = {
-  args: {},
-};
+export const withError = Template.bind({});
+withError.args = {};
 withError.decorators = [StoreDecorator({
-  loginForm: { username: "123", password: "asd", error: "ERROR" },
+    loginForm: { username: '123', password: 'asd', error: 'ERROR' },
 })];
 
-export const Loading: Story = {
-  args: {},
-};
+export const Loading = Template.bind({});
+Loading.args = {};
 Loading.decorators = [StoreDecorator({
-  loginForm: { isLoading: true },
+    loginForm: { isLoading: true },
 })];

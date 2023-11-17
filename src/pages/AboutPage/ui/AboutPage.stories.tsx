@@ -1,30 +1,22 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import AboutPage from "./AboutPage";
-import "app/styles/index.scss";
-import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import { Theme } from "app/providers/ThemeProvider";
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
+import AboutPage from './AboutPage';
 
-const meta = {
-  title: "pages/AboutPage",
-  component: AboutPage,
-  parameters: {
-    layout: "centered",
-  },
-  tags: ["autodocs"],
-} satisfies Meta<typeof AboutPage>;
+export default {
+    title: 'pages/AboutPage',
+    component: AboutPage,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof AboutPage>;
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+const Template: ComponentStory<typeof AboutPage> = () => <AboutPage />;
 
-export const Light: Story = {
-  args: {
-    className: "",
-  },
-};
+export const Normal = Template.bind({});
+Normal.args = {};
 
-export const Dark: Story = {
-  args: {
-    className: "",
-  },
-};
+export const Dark = Template.bind({});
+Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

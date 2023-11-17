@@ -1,12 +1,10 @@
-import { Theme, ThemeProvider } from "app/providers/ThemeProvider";
+import { Story } from '@storybook/react';
+import { Theme, ThemeProvider } from 'app/providers/ThemeProvider';
 
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-export const ThemeDecorator = (theme: Theme) => (Story: any) => {
-  return (
+export const ThemeDecorator = (theme: Theme) => (StoryComponent: Story) => (
     <ThemeProvider initialTheme={theme}>
-      <div className={`app ${theme}`}>
-        <Story />
-      </div>
+        <div className={`app ${theme}`}>
+            <StoryComponent />
+        </div>
     </ThemeProvider>
-  )
-};
+);
